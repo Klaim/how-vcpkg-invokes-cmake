@@ -4,7 +4,7 @@ How VCPKG launches CMake
 The command used to launch CMake is located in `vcpkg/toolsrc/src/vcpkg/build.cpp` in function `vcpkg::Build::do_build_package`.
 In this function we can find this code:
 
-```
+
     const std::string cmd_launch_cmake = System::make_cmake_cmd(
             cmake_exe_path,
             paths.ports_cmake,
